@@ -153,9 +153,6 @@ void lastLevel(int level) {
         break;        // goes to the victory screen immediately
       }
     }
-    if (redLED > blueLED) {
-      CircuitPlayground.setPixelColor(blueLED, 0, 0, 255);
-    }
     if (redLED != blueLED) {
       if (leftButtonFlag || rightButtonFlag) {
         CircuitPlayground.playTone(1000, 1000);
