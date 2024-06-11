@@ -71,6 +71,7 @@ void firstLevel(int level) {
     CircuitPlayground.setPixelColor(redLED, 255, 0, 0);  // allowing the red LED to go around in circles
     delay(gameSpeed);
     CircuitPlayground.setPixelColor(redLED, 0, 0, 0);
+    CircuitPlayground.setPixelColor(blueLED, 0, 0, 255); // to insure the blue LED stays lit even after the red LED crosses over it
     if (redLED == blueLED) {
       if (leftButtonFlag || rightButtonFlag) {  // if the red LED equals blue LED and either one of the buttons was pressed at the right time you complete the level
         CircuitPlayground.playTone(100, 100);   // tone to indicate you have completed the level
@@ -106,6 +107,7 @@ void secondLevel(int level) {
     CircuitPlayground.setPixelColor(redLED, 255, 0, 0);
     delay(gameSpeed);
     CircuitPlayground.setPixelColor(redLED, 0, 0, 0);
+    CircuitPlayground.setPixelColor(blueLED, 0, 0, 255);
     if (redLED == blueLED) {
       if (leftButtonFlag || rightButtonFlag) {
         CircuitPlayground.playTone(100, 100);
@@ -142,6 +144,7 @@ void lastLevel(int level) {
     CircuitPlayground.setPixelColor(redLED, 255, 0, 0);
     delay(gameSpeed);
     CircuitPlayground.setPixelColor(redLED, 0, 0, 0);
+    CircuitPlayground.setPixelColor(blueLED, 0, 0, 255);
     if (redLED == blueLED) {
       if (leftButtonFlag || rightButtonFlag) {
         leftButtonFlag = false;
