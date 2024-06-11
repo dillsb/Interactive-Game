@@ -14,5 +14,6 @@ In my game you will need to use the buttons to click when needed. You will need 
 # User Inputs/ Outputs
 1. SwitchFlag to turn the game on and off.
 2. Buttons to press when moving the LED goes over the LED.
-4. A sound played indicating each level you complete, or fail.
+3. A sound played indicating each level you complete, or fail.
+4. LEDs used to play the game as we have one red LED circling around and one blue LED chosen randomly through the 10 LEDs.
 5. Light patterns displayed when the game has been completed.
